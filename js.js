@@ -15,7 +15,7 @@ function changeColor() {
 
     var imageSource = document.getElementsByTagName('img')[0];
     // imageSource.src = 'https://tristanw3.github.io/mints-mince/mints.jpg'
-    imageSource.src = window.location.href + '/' + element.textContent  + '.jpg'
+    imageSource.src = window.location.href + element.textContent.toLowerCase()  + '.jpg'
     var buttonElement = document.getElementsByTagName('button')[0];
     buttonElement.style.backgroundColor = newColor
     buttonElement.style.border = '1px solid ' + newColor;
