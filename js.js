@@ -13,8 +13,9 @@ function changeColor() {
     var cardBackground = document.getElementsByClassName('card')[0];
     cardBackground.style.backgroundColor = newColor;
 
-    document.getElementsByTagName('img')[0].src = './' + element.textContent + '.jpg'
-
+    var imageSource = document.getElementsByTagName('img')[0];
+    // imageSource.src = 'https://tristanw3.github.io/mints-mince/mints.jpg'
+    imageSource = window.location.href + '/' + element.textContent  + '.jpg'
     var buttonElement = document.getElementsByTagName('button')[0];
     buttonElement.style.backgroundColor = newColor
     buttonElement.style.border = '1px solid ' + newColor;
