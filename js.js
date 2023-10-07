@@ -25,4 +25,3 @@ function changeColor() {
 document.getElementsByTagName('button')[0].addEventListener('click', function(){
     changeColor();
 })
-// changeColor('red')
